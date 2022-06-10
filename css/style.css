@@ -1,0 +1,140 @@
+:root {
+	--main-color1: #f9f9ff;
+	--main-color2: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+	--text-color1: #777;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside,
+section {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: "Poppins", sans-serif;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/*--------------------*/
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+header {
+	transition: all 0.5s;
+	box-shadow: -21.213px 21.213px 30px 0 rgb(158 158 158 / 30%);
+	background-color: white;
+}
+
+.header-row {
+}
+
+.navbar {
+}
+.container {
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+
+#welcome-section {
+	background: var(--main-color1);
+	height: 100vh;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.intro {
+	max-width: 50%;
+}
+
+.portrait {
+	max-width: 50%;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.project-header {
+}
+.project-tile {
+}
