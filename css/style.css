@@ -100,17 +100,56 @@ h6 {
 	flex-direction: column;
 }
 
-header {
+.header {
 	transition: all 0.5s;
 	box-shadow: -21.213px 21.213px 30px 0 rgb(158 158 158 / 30%);
 	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,
+	white,
+	grey);
 }
 
 .header-row {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
 }
 
-.navbar {
+.navbar ul {
+	display: flex;
 }
+
+.navbar li {
+	font-size: 2rem;
+	
+	margin-left: 20px;
+}
+
+.navbar a {
+	color: black;
+}
+
+.navbar a:hover {
+	background-color: aliceblue;
+	border-radius: 10px;
+}
+
 .container {
 	max-width: 1200px;
 	padding: 0px 15px;
@@ -127,17 +166,33 @@ header {
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
-  	background-size: cover
+  	background-size: cover;
+	
 }
 
-.row {
+.welcome-section .row {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
+	margin-top: -20px;
 }
 
 .intro {
 	max-width: 50%;
+}
+
+.intro h6 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+.intro h1 {
+	text-transform: uppercase;
+	margin: 20px 0;
+	font-size: 40px;
 }
 
 .portrait {
@@ -179,7 +234,14 @@ header {
 	color: black;
 }
 
-img {
-	display: block;
-	width: 100%;
+main {
+	padding-top: 80px;
+}
+
+#welcome-section, #contacts, #projects {
+	border-top: 80px solid transparent;
+	margin-top: -80px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
 }
