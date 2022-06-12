@@ -145,6 +145,11 @@ h6 {
 	font-size: 40px;
 }
 
+.intro p{
+	font-size: 17px;
+	padding-right: 10px;
+}
+
 h2 {
 	font-size: 4rem;
 	font-weight: 600;
